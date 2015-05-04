@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fMb-Bp-BlT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tz9-OT-Pjf">
+                                <rect key="frame" x="191" y="160" width="124" height="108"/>
+                                <state key="normal" image="character_libra.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="horoscopeAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="93o-UL-sSQ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xyj-Pn-nJ1" customClass="HoroscopeView">
+                                <rect key="frame" x="9" y="-449" width="302" height="449"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_detail_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="2HQ-rl-cu2">
+                                        <rect key="frame" x="0.0" y="0.0" width="302" height="449"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="工作情况:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pld-Fb-y05">
+                                        <rect key="frame" x="8" y="110" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="理财投资:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nu-fk-TBt">
+                                        <rect key="frame" x="160" y="110" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="幸运数字:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6e-c1-oym">
+                                        <rect key="frame" x="160" y="135" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIJ-WB-fm4">
+                                        <rect key="frame" x="220" y="135" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="射手座" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyL-tW-EbS">
+                                        <rect key="frame" x="65" y="135" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWb-Xi-2ID">
+                                        <rect key="frame" x="65" y="160" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVZ-V2-3jC">
+                                        <rect key="frame" x="64" y="185" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWZ-JJ-Gbm">
+                                        <rect key="frame" x="64" y="210" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="速配星座:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcO-o8-Yge">
+                                        <rect key="frame" x="8" y="135" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="幸运颜色:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZp-bo-F7o">
+                                        <rect key="frame" x="8" y="160" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="健康指数:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79K-nl-mjx">
+                                        <rect key="frame" x="8" y="185" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="商谈指数:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ey7-jF-JPh">
+                                        <rect key="frame" x="8" y="210" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="综合运势:" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBV-OU-AgV">
+                                        <rect key="frame" x="8" y="270" width="286" height="90"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="爱情运势:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zap-ye-RmL">
+                                        <rect key="frame" x="160" y="85" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今日运势" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdd-nE-S1f">
+                                        <rect key="frame" x="117" y="13" width="68" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_title1_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="h0Y-GM-h8l">
+                                        <rect key="frame" x="0.0" y="60" width="302" height="3"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="天秤座 09.23-10.22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCP-4W-vnU">
+                                        <rect key="frame" x="88" y="51" width="126" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="综合运势:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEg-ls-lGN">
+                                        <rect key="frame" x="8" y="85" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_title2_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="a8v-zo-II0">
+                                        <rect key="frame" x="0.0" y="245" width="302" height="3"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="整体运势" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qf-JE-2CV">
+                                        <rect key="frame" x="123" y="238" width="56" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qP1-sn-tVA" customClass="StarView">
+                                        <rect key="frame" x="63" y="85" width="80" height="15"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="KEC-bk-dwf">
+                                                <rect key="frame" x="5" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="XTu-4B-CJO">
+                                                <rect key="frame" x="20" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mwl-hi-yfX">
+                                                <rect key="frame" x="35" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="g4j-0O-gF2">
+                                                <rect key="frame" x="50" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="QWp-cG-RzH">
+                                                <rect key="frame" x="65" y="3" width="10" height="10"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="starImageView1" destination="KEC-bk-dwf" id="4zY-cu-lmG"/>
+                                            <outlet property="starImageView2" destination="XTu-4B-CJO" id="gvW-9j-laD"/>
+                                            <outlet property="starImageView3" destination="Mwl-hi-yfX" id="fj0-js-jik"/>
+                                            <outlet property="starImageView4" destination="g4j-0O-gF2" id="b8J-yk-PAd"/>
+                                            <outlet property="starImageView5" destination="QWp-cG-RzH" id="w3l-Uw-Hzx"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oPL-7p-4eL" customClass="StarView">
+                                        <rect key="frame" x="63" y="110" width="80" height="15"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="vyp-pV-jCf">
+                                                <rect key="frame" x="5" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="1J9-cy-eQz">
+                                                <rect key="frame" x="20" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="XfU-qu-FZt">
+                                                <rect key="frame" x="35" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="6Rx-hP-jpL">
+                                                <rect key="frame" x="50" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="IyD-8d-EVi">
+                                                <rect key="frame" x="65" y="3" width="10" height="10"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="starImageView1" destination="vyp-pV-jCf" id="E6I-hy-4Wi"/>
+                                            <outlet property="starImageView2" destination="1J9-cy-eQz" id="Xso-8y-slf"/>
+                                            <outlet property="starImageView3" destination="XfU-qu-FZt" id="Pa8-aa-q1s"/>
+                                            <outlet property="starImageView4" destination="6Rx-hP-jpL" id="nYg-q9-Q3H"/>
+                                            <outlet property="starImageView5" destination="IyD-8d-EVi" id="oDq-JW-ATQ"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xWd-Tw-tnp" customClass="StarView">
+                                        <rect key="frame" x="215" y="110" width="80" height="15"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="lsI-2T-kRe">
+                                                <rect key="frame" x="5" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="LLj-oW-WCy">
+                                                <rect key="frame" x="20" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="qFk-kt-ZqM">
+                                                <rect key="frame" x="35" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="23d-su-SqS">
+                                                <rect key="frame" x="50" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="ecS-kM-Tzh">
+                                                <rect key="frame" x="65" y="3" width="10" height="10"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="starImageView1" destination="lsI-2T-kRe" id="MxY-5b-zZ9"/>
+                                            <outlet property="starImageView2" destination="LLj-oW-WCy" id="bJE-tE-e3Q"/>
+                                            <outlet property="starImageView3" destination="qFk-kt-ZqM" id="a2o-Lg-UoC"/>
+                                            <outlet property="starImageView4" destination="23d-su-SqS" id="OAr-VB-Gnw"/>
+                                            <outlet property="starImageView5" destination="ecS-kM-Tzh" id="Yaq-l6-WGF"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d0c-aD-TbK" customClass="StarView">
+                                        <rect key="frame" x="215" y="85" width="80" height="15"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="3dZ-Vg-a2Q">
+                                                <rect key="frame" x="5" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="A9F-nV-xSX">
+                                                <rect key="frame" x="20" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="pDl-gO-MDr">
+                                                <rect key="frame" x="35" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="8KS-Y0-eLz">
+                                                <rect key="frame" x="50" y="3" width="10" height="10"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="horoscope_empty_stare.png" translatesAutoresizingMaskIntoConstraints="NO" id="aam-45-me9">
+                                                <rect key="frame" x="65" y="3" width="10" height="10"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="starImageView1" destination="3dZ-Vg-a2Q" id="1Ft-NI-YYV"/>
+                                            <outlet property="starImageView2" destination="A9F-nV-xSX" id="Kzy-ot-3f3"/>
+                                            <outlet property="starImageView3" destination="pDl-gO-MDr" id="40A-da-PdT"/>
+                                            <outlet property="starImageView4" destination="8KS-Y0-eLz" id="fbl-yV-xcf"/>
+                                            <outlet property="starImageView5" destination="aam-45-me9" id="Xeh-py-1S1"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="allLbl" destination="iBV-OU-AgV" id="xr7-Il-MxL"/>
+                                    <outlet property="bussinessLbl" destination="TWZ-JJ-Gbm" id="jcy-D8-DKt"/>
+                                    <outlet property="connameLbl" destination="OCP-4W-vnU" id="Lru-vx-kdV"/>
+                                    <outlet property="healthLbl" destination="cVZ-V2-3jC" id="K9w-dp-8qB"/>
+                                    <outlet property="horoscopeLbl" destination="UyL-tW-EbS" id="qXW-pg-E23"/>
+                                    <outlet property="loveStarView" destination="d0c-aD-TbK" id="cXC-3f-9aS"/>
+                                    <outlet property="luckyColorLbl" destination="bWb-Xi-2ID" id="EVm-Sw-BN0"/>
+                                    <outlet property="luckyNumLbl" destination="sIJ-WB-fm4" id="nZv-oO-A0b"/>
+                                    <outlet property="manageStarView" destination="xWd-Tw-tnp" id="6iu-8M-7Gh"/>
+                                    <outlet property="multipleStarView" destination="qP1-sn-tVA" id="vFV-GX-TI8"/>
+                                    <outlet property="workStarView" destination="oPL-7p-4eL" id="UjP-R3-lRb"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DQQ-uG-g02">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0G-01-1F1">
+                                        <rect key="frame" x="5" y="22" width="39" height="44"/>
+                                        <state key="normal" image="main_shortcut.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="menuAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Czw-qO-6hT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNb-hF-sq1">
+                                        <rect key="frame" x="276" y="22" width="39" height="44"/>
+                                        <state key="normal" image="main_setting.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="setAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dAZ-Ri-h7j"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main_city.png" translatesAutoresizingMaskIntoConstraints="NO" id="ape-d7-q4g">
+                                        <rect key="frame" x="182" y="40" width="10" height="8"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBb-zO-ZiJ">
+                                        <rect key="frame" x="101" y="29" width="73" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="长沙">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectCityAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JHf-CH-US5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x4e-XF-JFd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </scrollView>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" id="Izm-Xq-dS2"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="cityBtn" destination="nBb-zO-ZiJ" id="wbC-wa-Whb"/>
+                        <outlet property="horoscopeBtn" destination="Tz9-OT-Pjf" id="lhN-Te-XWk"/>
+                        <outlet property="horoscopeView" destination="Xyj-Pn-nJ1" id="q9g-NT-qVI"/>
+                        <outlet property="scrollView" destination="x4e-XF-JFd" id="3gn-qs-hcF"/>
+                        <outlet property="topView" destination="DQQ-uG-g02" id="vlk-cU-exL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063" y="132"/>
+        </scene>
+        <!--Constellation View Controller-->
+        <scene sceneID="PHg-f8-TYf">
+            <objects>
+                <viewController storyboardIdentifier="ConstellationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kjh-ps-AMr" customClass="ConstellationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e31-h1-aDu"/>
+                        <viewControllerLayoutGuide type="bottom" id="B2J-cv-MIu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VXZ-2B-jvu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hxX-Ug-EZr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZTg-mo-Eae">
+                                    <size key="itemSize" width="145" height="145"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FAI-Id-yj9">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09Z-8S-lBP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwl-Uy-brT">
+                                        <rect key="frame" x="13" y="27" width="23" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="23" id="fsu-Ck-Cq8"/>
+                                            <constraint firstAttribute="height" constant="30" id="zv7-PR-bil"/>
+                                        </constraints>
+                                        <state key="normal" image="share_back.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backAction:" destination="Kjh-ps-AMr" eventType="touchUpInside" id="z9t-9M-6Xr"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星座精灵" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdY-Wz-MAu">
+                                        <rect key="frame" x="126" y="31" width="68" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="GdY-Wz-MAu" secondAttribute="height" multiplier="68:21" id="EmJ-Fr-O2Y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="3v9-ng-Yo2"/>
+                                    <constraint firstItem="GdY-Wz-MAu" firstAttribute="top" secondItem="09Z-8S-lBP" secondAttribute="top" constant="31" id="8eh-Uc-0pF"/>
+                                    <constraint firstAttribute="centerX" secondItem="GdY-Wz-MAu" secondAttribute="centerX" id="BGR-dU-6JF"/>
+                                    <constraint firstItem="Nwl-Uy-brT" firstAttribute="leading" secondItem="09Z-8S-lBP" secondAttribute="leading" constant="13" id="VXk-3M-HSQ"/>
+                                    <constraint firstItem="Nwl-Uy-brT" firstAttribute="top" secondItem="09Z-8S-lBP" secondAttribute="top" constant="27" id="wNE-qY-1eD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="09Z-8S-lBP" firstAttribute="leading" secondItem="VXZ-2B-jvu" secondAttribute="leading" id="3CD-8L-XM7"/>
+                            <constraint firstAttribute="trailing" secondItem="hxX-Ug-EZr" secondAttribute="trailing" id="GkZ-i7-iN7"/>
+                            <constraint firstItem="09Z-8S-lBP" firstAttribute="top" secondItem="VXZ-2B-jvu" secondAttribute="top" id="RPJ-Ze-mgf"/>
+                            <constraint firstItem="hxX-Ug-EZr" firstAttribute="leading" secondItem="VXZ-2B-jvu" secondAttribute="leading" id="Uga-pi-fZn"/>
+                            <constraint firstItem="B2J-cv-MIu" firstAttribute="top" secondItem="hxX-Ug-EZr" secondAttribute="bottom" id="fHm-2A-FXM"/>
+                            <constraint firstAttribute="trailing" secondItem="09Z-8S-lBP" secondAttribute="trailing" id="fvW-RO-oZq"/>
+                            <constraint firstItem="hxX-Ug-EZr" firstAttribute="top" secondItem="VXZ-2B-jvu" secondAttribute="top" id="uTr-kc-Dpp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="hxX-Ug-EZr" id="HSL-lk-mqH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1e7-PU-ndY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1419" y="132"/>
+        </scene>
+        <!--Back Gournd View Controller-->
+        <scene sceneID="90k-JH-769">
+            <objects>
+                <viewController storyboardIdentifier="BackGourndViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5IW-pX-LYq" customClass="BackGourndViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h2o-el-Wzy"/>
+                        <viewControllerLayoutGuide type="bottom" id="i0W-lj-MP5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L0v-FL-EvF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="A6F-nr-36Y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZ2-qH-nic">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xt-U8-t80">
+                                        <rect key="frame" x="13" y="27" width="23" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="23" id="SdW-G6-h30"/>
+                                            <constraint firstAttribute="height" constant="30" id="b8p-la-o84"/>
+                                        </constraints>
+                                        <state key="normal" image="share_back.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backAction:" destination="Kjh-ps-AMr" eventType="touchUpInside" id="dbx-hG-Sod"/>
+                                            <action selector="backAction:" destination="5IW-pX-LYq" eventType="touchUpInside" id="pVn-da-Bpw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更换主题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nN-os-1FB">
+                                        <rect key="frame" x="126" y="31" width="68" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="68" id="Bwc-tx-m5C"/>
+                                            <constraint firstAttribute="height" constant="21" id="vqT-gt-rFd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="3Xt-U8-t80" firstAttribute="leading" secondItem="nZ2-qH-nic" secondAttribute="leading" constant="13" id="N2n-sF-hee"/>
+                                    <constraint firstAttribute="centerY" secondItem="5nN-os-1FB" secondAttribute="centerY" constant="-9.5" id="RZp-r9-4Ys"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Xt-U8-t80" secondAttribute="bottom" constant="7" id="XC7-Zj-ZgZ"/>
+                                    <constraint firstAttribute="centerX" secondItem="5nN-os-1FB" secondAttribute="centerX" id="cLA-59-eCQ"/>
+                                    <constraint firstAttribute="height" constant="64" id="icb-JQ-Eq4"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j9w-wN-HBr">
+                                <rect key="frame" x="0.0" y="72" width="320" height="496"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eo7-Of-KJJ">
+                                    <size key="itemSize" width="145" height="145"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Xg5-1d-f5x">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i0W-lj-MP5" firstAttribute="top" secondItem="j9w-wN-HBr" secondAttribute="bottom" id="Chs-Wi-Yg2"/>
+                            <constraint firstItem="nZ2-qH-nic" firstAttribute="leading" secondItem="L0v-FL-EvF" secondAttribute="leading" id="JS6-eW-16Y"/>
+                            <constraint firstItem="j9w-wN-HBr" firstAttribute="top" secondItem="nZ2-qH-nic" secondAttribute="bottom" constant="8" id="Lfj-rY-jo5"/>
+                            <constraint firstItem="A6F-nr-36Y" firstAttribute="leading" secondItem="L0v-FL-EvF" secondAttribute="leading" id="TIR-aS-nOG"/>
+                            <constraint firstAttribute="trailing" secondItem="nZ2-qH-nic" secondAttribute="trailing" id="Y1h-QH-ybB"/>
+                            <constraint firstItem="i0W-lj-MP5" firstAttribute="top" secondItem="A6F-nr-36Y" secondAttribute="bottom" id="ZaC-5F-o6i"/>
+                            <constraint firstItem="A6F-nr-36Y" firstAttribute="top" secondItem="L0v-FL-EvF" secondAttribute="top" id="iBa-Qf-1Ls"/>
+                            <constraint firstAttribute="trailing" secondItem="j9w-wN-HBr" secondAttribute="trailing" id="kc2-DE-32p"/>
+                            <constraint firstItem="j9w-wN-HBr" firstAttribute="leading" secondItem="L0v-FL-EvF" secondAttribute="leading" id="ln1-2S-P85"/>
+                            <constraint firstItem="nZ2-qH-nic" firstAttribute="top" secondItem="L0v-FL-EvF" secondAttribute="top" id="sfC-fh-elJ"/>
+                            <constraint firstAttribute="trailing" secondItem="A6F-nr-36Y" secondAttribute="trailing" id="xh7-cc-aYt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImageView" destination="A6F-nr-36Y" id="8u5-Fh-buF"/>
+                        <outlet property="collectionView" destination="j9w-wN-HBr" id="aX0-Cd-Tr9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrH-Vi-2JE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776" y="-52"/>
+        </scene>
+        <!--Left View Controller-->
+        <scene sceneID="nFm-4r-h6E">
+            <objects>
+                <viewController storyboardIdentifier="LeftViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kjn-xd-Ar9" customClass="LeftViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uh8-7o-5GJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="21F-Sa-b5a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SlR-SV-6OV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWd-JK-xaF">
+                                <rect key="frame" x="0.0" y="434" width="51" height="68"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="-47" minY="47" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="分享" image="shortcut_shared.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareAction:" destination="Kjn-xd-Ar9" eventType="touchUpInside" id="fgh-S5-nPN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X8r-Zo-0dC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="731" y="772"/>
+        </scene>
+        <!--Right View Controller-->
+        <scene sceneID="9Pj-kL-tsS">
+            <objects>
+                <viewController storyboardIdentifier="RightViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7CU-pI-XWo" customClass="RightViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1ND-UA-8Q4"/>
+                        <viewControllerLayoutGuide type="bottom" id="fri-09-aAb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JJX-Ls-U72">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="X8Z-E6-9IO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="470"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="天气预报lite" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtX-yl-pnn">
+                                <rect key="frame" x="90" y="489" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="X8Z-E6-9IO" id="c1c-0L-nvH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0h6-eS-ElT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1126" y="756"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4GC-lM-iET">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="fMb-Bp-BlT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ybf-vr-n5Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="3OT-lZ-e6u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJx-2Y-Mg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="139.99999999999997"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg1.png" width="320" height="568"/>
+        <image name="character_libra.png" width="124" height="108"/>
+        <image name="horoscope_detail_bg.png" width="302" height="449"/>
+        <image name="horoscope_empty_stare.png" width="10" height="10"/>
+        <image name="horoscope_title1_bg.png" width="302" height="3"/>
+        <image name="horoscope_title2_bg.png" width="302" height="3"/>
+        <image name="main_city.png" width="10" height="8"/>
+        <image name="main_setting.png" width="39" height="44"/>
+        <image name="main_shortcut.png" width="39" height="44"/>
+        <image name="share_back.png" width="23" height="30"/>
+        <image name="shortcut_shared.png" width="47" height="37"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

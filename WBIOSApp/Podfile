@@ -1,0 +1,7 @@
+platform:ios, '7.0'
+source 'https://github.com/CocoaPods/Specs.git'
+pod 'KissXML', '~> 5.0'
+pod 'AFNetworking', '~> 2.4.1'
+pod 'MFSideMenu', '~> 0.5.5'
+pod 'LBBlurredImage', '~> 0.2.0'
+pod 'TSMessages', '~> 0.9.12'

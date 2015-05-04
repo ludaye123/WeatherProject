@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ConstellationCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character_aquarius.png" translatesAutoresizingMaskIntoConstraints="NO" id="gWg-7I-6Ff">
+                        <rect key="frame" x="10" y="3" width="124" height="108"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="108" id="5YG-Hf-yrr"/>
+                            <constraint firstAttribute="width" constant="124" id="UiY-uA-wgS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbZ-AE-tNO">
+                        <rect key="frame" x="12" y="115" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="36N-ve-u84"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="character_select.png" translatesAutoresizingMaskIntoConstraints="NO" id="d48-Yn-gkl">
+                        <rect key="frame" x="52" y="52" width="41" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="d48-Yn-gkl" secondAttribute="height" multiplier="1:1" id="zcc-V3-tAO"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="sbZ-AE-tNO" firstAttribute="top" secondItem="gWg-7I-6Ff" secondAttribute="bottom" constant="4" id="CSZ-Fg-3q7"/>
+                <constraint firstItem="gWg-7I-6Ff" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="JW6-Ny-N8w"/>
+                <constraint firstItem="sbZ-AE-tNO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="SzO-S0-qZJ"/>
+                <constraint firstAttribute="bottom" secondItem="sbZ-AE-tNO" secondAttribute="bottom" constant="9" id="cNg-1J-ebM"/>
+                <constraint firstItem="gWg-7I-6Ff" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="frE-kA-JM3"/>
+                <constraint firstAttribute="centerX" secondItem="d48-Yn-gkl" secondAttribute="centerX" id="jST-dp-f1B"/>
+                <constraint firstAttribute="trailing" secondItem="gWg-7I-6Ff" secondAttribute="trailing" constant="11" id="jwf-5R-TD4"/>
+                <constraint firstAttribute="centerY" secondItem="d48-Yn-gkl" secondAttribute="centerY" id="sxx-sw-fAc"/>
+            </constraints>
+            <size key="customSize" width="139" height="130"/>
+            <connections>
+                <outlet property="conImageView" destination="gWg-7I-6Ff" id="MHn-Iq-Zf5"/>
+                <outlet property="conNameLbl" destination="sbZ-AE-tNO" id="mu8-2q-hhD"/>
+                <outlet property="selectImageView" destination="d48-Yn-gkl" id="Li8-hp-axR"/>
+            </connections>
+            <point key="canvasLocation" x="206.5" y="209.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="character_aquarius.png" width="124" height="108"/>
+        <image name="character_select.png" width="41" height="41"/>
+    </resources>
+</document>

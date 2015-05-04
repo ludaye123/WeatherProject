@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CityViewController">
+            <connections>
+                <outlet property="bgImgView" destination="Nao-yy-dxK" id="l20-s8-mAP"/>
+                <outlet property="collectionView" destination="WYy-U5-116" id="IAS-4A-SgO"/>
+                <outlet property="tableView" destination="p6X-1i-Qg8" id="kSr-QA-MDQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nao-yy-dxK">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="WYy-U5-116">
+                            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RCf-kt-uxZ">
+                                <size key="itemSize" width="100" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="p6X-1i-Qg8">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="p6X-1i-Qg8" firstAttribute="top" secondItem="Nao-yy-dxK" secondAttribute="top" id="0qg-Cd-Ypf"/>
+                        <constraint firstAttribute="bottom" secondItem="WYy-U5-116" secondAttribute="bottom" id="B8I-3g-gyX"/>
+                        <constraint firstAttribute="trailing" secondItem="WYy-U5-116" secondAttribute="trailing" id="HI5-ND-55W"/>
+                        <constraint firstItem="WYy-U5-116" firstAttribute="top" secondItem="Nao-yy-dxK" secondAttribute="top" constant="64" id="JgG-4K-MWU"/>
+                        <constraint firstItem="WYy-U5-116" firstAttribute="leading" secondItem="Nao-yy-dxK" secondAttribute="leading" id="Lms-h7-dcw"/>
+                        <constraint firstAttribute="bottom" secondItem="p6X-1i-Qg8" secondAttribute="bottom" id="Rhv-bO-GYH"/>
+                        <constraint firstAttribute="trailing" secondItem="p6X-1i-Qg8" secondAttribute="trailing" id="cEt-In-edO"/>
+                        <constraint firstItem="p6X-1i-Qg8" firstAttribute="leading" secondItem="Nao-yy-dxK" secondAttribute="leading" id="e7C-MN-6cG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Nao-yy-dxK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="O0c-CW-2fj"/>
+                <constraint firstItem="Nao-yy-dxK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Reu-Ho-CuT"/>
+                <constraint firstAttribute="trailing" secondItem="Nao-yy-dxK" secondAttribute="trailing" id="e73-OA-fpe"/>
+                <constraint firstAttribute="bottom" secondItem="Nao-yy-dxK" secondAttribute="bottom" id="fRq-rZ-w74"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

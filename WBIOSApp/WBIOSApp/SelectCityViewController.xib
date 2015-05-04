@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14C68m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectCityViewController">
+            <connections>
+                <outlet property="bgImgView" destination="6Et-Hs-H88" id="CNx-ea-rlX"/>
+                <outlet property="tableView" destination="sj3-iA-2W9" id="FLY-UT-poH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Et-Hs-H88">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sj3-iA-2W9">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="sj3-iA-2W9" secondAttribute="bottom" id="V9h-2l-rmu"/>
+                        <constraint firstAttribute="trailing" secondItem="sj3-iA-2W9" secondAttribute="trailing" id="ZU5-ct-LPo"/>
+                        <constraint firstItem="sj3-iA-2W9" firstAttribute="leading" secondItem="6Et-Hs-H88" secondAttribute="leading" id="jvv-NC-79Z"/>
+                        <constraint firstItem="sj3-iA-2W9" firstAttribute="top" secondItem="6Et-Hs-H88" secondAttribute="top" id="tEr-hg-zjp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6Et-Hs-H88" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Wbd-9J-7a6"/>
+                <constraint firstItem="6Et-Hs-H88" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="am5-cg-g5g"/>
+                <constraint firstAttribute="trailing" secondItem="6Et-Hs-H88" secondAttribute="trailing" id="lsk-WP-kxi"/>
+                <constraint firstAttribute="bottom" secondItem="6Et-Hs-H88" secondAttribute="bottom" id="sBQ-je-zYO"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

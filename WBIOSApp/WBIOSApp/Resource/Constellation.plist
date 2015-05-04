@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>constellationkey</key>
+	<array>
+		<dict>
+			<key>conname</key>
+			<string>白羊座 3.21-4.19</string>
+			<key>contype</key>
+			<string>0</string>
+			<key>conimageName</key>
+			<string>character_aries@2x~iphone</string>
+		</dict>
+		<dict>
+			<key>conname</key>
+			<string>金牛座  4.20-5.20</string>
+			<key>contype</key>
+			<string>1</string>
+			<key>conimageName</key>
+			<string>character_taurus@2x~iphone</string>
+		</dict>
+		<dict>
+			<key>conname</key>
+			<string>双子座 5.21-6.21</string>
+			<key>contype</key>
+			<string>2</string>
+			<key>conimageName</key>
+			<string>character_gemini@2x~iphone</string>
+		</dict>
+		<dict>
+			<key>conname</key>
+			<string>巨蟹座 6.22-7.22</string>
+			<key>contype</key>
+			<string>3</string>
+			<key>conimageName</key>
+			<string>character_cancer@2x~iphone</string>
+		</dict>
+		<dict>
+			<key>conname</key>
+			<string>狮子座  7.23-8.22</string>
+			<key>contype</key>
+			<string>4</string>
+			<key>conimageName</key>
+			<string>character_leo@2x~iphone</string>
+		</dict>
+		<dict>
+			<key>conname</key>
+			<string>处女座 8.23-9.22</string>
+			<key>contype</key>
+			<string>5</string>
+			<key>conimageName</key>
+			<string>character_virgo@2x~iphone</string>
+		</dict>
+		<dict>
+			<key>conname</key>
+			<string>天秤座  9.23-10.23</string>
+			<key>contype</key>
+			<string>6</string>
+			<key>conimageName</key>
+			<string>character_libra@2x~iphone</string>
+		</dict>
+		<dict>
+			<key>conname</key>
+			<string>天蝎座 10.24-11.22</string>
+			<key>contype</key>
+			<string>7</string>
+			<key>conimageName</key>
+			<string>character_scorpio@2x~iphone</string>
+		</dict>
+		<dict>
+			<key>conname</key>
+			<string>射手座  11.23-12.21</string>
+			<key>contype</key>
+			<string>8</string>
+			<key>conimageName</key>
+			<string>character_sagittarius@2x~iphone</string>
+		</dict>
+		<dict>
+			<key>conname</key>
+			<string>摩羯座  12.22-1.19</string>
+			<key>contype</key>
+			<string>9</string>
+			<key>conimageName</key>
+			<string>character_capricorn@2x~iphone</string>
+		</dict>
+		<dict>
+			<key>conname</key>
+			<string>水瓶座  1.20-2.18</string>
+			<key>contype</key>
+			<string>10</string>
+			<key>conimageName</key>
+			<string>character_aquarius@2x~iphone</string>
+		</dict>
+		<dict>
+			<key>conname</key>
+			<string>双鱼座  2.19-3.20</string>
+			<key>contype</key>
+			<string>11</string>
+			<key>conimageName</key>
+			<string>character_pisces@2x~iphone</string>
+		</dict>
+	</array>
+</dict>
+</plist>
